@@ -1,0 +1,15 @@
+current directory: /Users/aki/vsCodeWorkspace/Rails/trials/auth/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/aki/.rbenv/versions/2.5.1/bin/ruby -I /Users/aki/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190215-2207-3pd2f.rb extconf.rb
+creating Makefile
+
+current directory: /Users/aki/vsCodeWorkspace/Rails/trials/auth/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/aki/vsCodeWorkspace/Rails/trials/auth/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/aki/vsCodeWorkspace/Rails/trials/auth/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190215-2207-7mxyym/bindex
