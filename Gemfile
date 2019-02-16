@@ -20,6 +20,12 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
 gem "pry"
+gem 'omniauth-github'
+
+#bootstrap　主にアラート用
+gem 'bootstrap'
+gem 'jquery-rails'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

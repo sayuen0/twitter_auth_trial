@@ -11,18 +11,23 @@
 
   <body>
   <header>
+    <% if flash[:notice] %>
+      <div class="notice alert alert-info" role="alert">
+        <%= flash[:notice]%>
+      </div>
+    <% end %>
+
     <% if logged_in? %>
       <%= link_to 'Logout', '/signout' %>
     <% else %>
-      <%= link_to 'Twitter Login', '/auth/twitter' %>
-      <%= link_to "Google Login", '/auth/google_oauth2' %>
+      <nav class="navbar navbar-brand">
+        <%= link_to 'Twitter Login', '/auth/twitter' %>
+        <%= link_to "Google Login", '/auth/google_oauth2' %>
+        <%= link_to "Github Login", "/auth/github" %>
+
+      </nav>
     <% end %>
   </header>
-  <% if flash[:notice] %>
-    <div class="notice">
-      <%= flash[:notice]%>
-    </div>
-  <% end %>
   <%= yield %>
   </body>
 </html>
