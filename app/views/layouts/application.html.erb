@@ -15,6 +15,7 @@
       <%= link_to 'Logout', '/signout' %>
     <% else %>
       <%= link_to 'Twitter Login', '/auth/twitter' %>
+      <%= link_to "Google Login", '/auth/google_oauth2' %>
     <% end %>
   </header>
   <% if flash[:notice] %>
