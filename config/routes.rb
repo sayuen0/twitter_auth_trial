@@ -3,5 +3,4 @@ Rails.application.routes.draw do
   get "pages/show"
   get "/auth/:provider/callback", to: "sessions#create"
   get "/signout", to: "sessions#destroy"
-
 end
