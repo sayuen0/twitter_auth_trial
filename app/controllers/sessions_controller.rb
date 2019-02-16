@@ -4,9 +4,9 @@ class SessionsController < ApplicationController
     user = User.find_or_create_from_auth(auth)
 
     session[:user_id] = user.uid
+    # メール機能
+    NotificationMailer.send_confirm_to_user(user).deliver
     flash[:notice] = "ユーザ認証が完了しました"
-    if auth.provider=="github"
-    end
     redirect_to root_path
   end
 

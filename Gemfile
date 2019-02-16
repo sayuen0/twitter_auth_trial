@@ -26,7 +26,6 @@ gem 'omniauth-github'
 gem 'bootstrap'
 gem 'jquery-rails'
 
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -55,6 +54,8 @@ group :development, :test do
 end
 
 group :development do
+  #メールが実際にこないように
+  gem "letter_opener"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
